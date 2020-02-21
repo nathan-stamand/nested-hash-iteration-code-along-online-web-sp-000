@@ -20,5 +20,9 @@ def remove_strawberry(contacts)
       traits.each do |trait, details|
         if trait == :favorite_ice_cream_flavors
           details.any?("strawberry")
-          
+          trait.delete("strawberry")
+        end
+      end
+    end
+  end
 end
